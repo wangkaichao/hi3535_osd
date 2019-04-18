@@ -1,0 +1,2 @@
+xcopy /s /e /f $(SolutionDir)$(Configuration)\$(Platform)\$(TargetName).dll $(SolutionDir)\..\lib\windows\win32\dll\
+xcopy /s /e /f $(SolutionDir)$(Configuration)\$(Platform)\$(TargetName).lib $(SolutionDir)\..\lib\windows\win32\dll\
