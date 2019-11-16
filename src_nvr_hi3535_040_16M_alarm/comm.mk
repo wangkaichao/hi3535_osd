@@ -4,7 +4,6 @@ ROOTDIR = ../..
 HISIDIR = $(ROOTDIR)/hisi_040
 
 CROSS ?= arm-hisiv100nptl-linux-
-#CROSS ?= arm-hisiv200-linux-
 
 CC := $(CROSS)gcc
 AR := $(CROSS)ar
@@ -53,7 +52,7 @@ ifneq ($(TARGETEXE),)
 $(TARGETEXE) : $(OBJECTS) $(HSOURCE) 
 	$(CC) -o $@ $^ $(CFLAGS) $(LINK_LIB) $(LDLIBS)
 	$(STRIP) $@
-	$(CP) $@ /opt/source/rootfs_uclibc_hi3535_040_16M/opt/user
+	$(CP) $@ /opt/source/hi3535_osd/rootfs_uclibc_hi3535_040_16M/opt/user
 clean:
 	$(RM) $(OBJECTS) $(TARGETEXE)
 endif

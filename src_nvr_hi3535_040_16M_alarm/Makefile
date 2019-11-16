@@ -10,38 +10,19 @@
 export SNS
 
 all:
+	mkdir -p lib
 	make -C hisi_040
 	make -C commLib
 	make -C paramLib
 	make -C osd
-	#make -C email
-	#make -C iwlistLib
-	#make -C ptzLib
-	#make -C streamLib
-	#make -C encLib
-	#make -C recordLib
-	#make -C ftpLib
-	#make -C appLib
-	#make -C goodlinkLib
 	make -C NetLib
-	#make -C fabLib
 	make -C demo
 
 .PHONY:clean
 clean:
 	make clean -C demo
-	#make clean -C goodlinkLib
 	make clean -C commLib
-	#make clean -C iwlistLib
-	#make clean -C email
 	make clean -C paramLib
 	make clean -C osd
-	#make clean -C streamLib
-	#make clean -C appLib
-	#make clean -C encLib
-	#make clean -C ftpLib
 	make clean -C NetLib
-	#make clean -C ptzLib
-	#make clean -C recordLib
-	#make clean -C fabLib
 	make clean -C hisi_040

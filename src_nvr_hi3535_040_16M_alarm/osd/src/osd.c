@@ -25,7 +25,7 @@
 
 #include "paramLib.h"
 #include "commLib.h"
-#include "NetLib.h"
+#include "netLib.h"
 
 static struct fb_bitfield s_r16 = {10, 5, 0};
 static struct fb_bitfield s_g16 = {5, 5, 0};
